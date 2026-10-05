@@ -1,3 +1,29 @@
+<h1 align="center">Bia Tech Code</h1>
+<p align="center">O agente de programação com IA da Bia Tech.</p>
+
+> **Bia Tech Code** é um fork do [OpenCode](https://github.com/anomalyco/opencode) (licença MIT).
+> Todo o crédito do projeto original vai para os autores do OpenCode.
+
+## Rodando localmente
+
+Requer [Bun](https://bun.sh) 1.3+.
+
+```bash
+bun install
+bun dev
+```
+
+O comando da CLI é `biatech` (o alias `opencode` continua disponível por compatibilidade).
+
+## Sincronizando com o upstream
+
+```bash
+git fetch upstream
+git merge upstream/dev
+```
+
+---
+
 <p align="center">
   <a href="https://opencode.ai">
     <picture>
