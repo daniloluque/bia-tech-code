@@ -3,6 +3,7 @@ import { createUniqueId, type ComponentProps } from "solid-js"
 export function WordmarkV2(props: Pick<ComponentProps<"svg">, "class">) {
   const mask = createUniqueId()
   const maskGradient = createUniqueId()
+  const fillGradient = createUniqueId()
 
   return (
     <svg
@@ -11,48 +12,29 @@ export function WordmarkV2(props: Pick<ComponentProps<"svg">, "class">) {
       fill="none"
       classList={{ [props.class ?? ""]: !!props.class }}
     >
-      <g opacity="0.6">
+      <g>
         <g mask={`url(#${mask})`}>
-          <g opacity="0.16">
+          <g fill={`url(#${fillGradient})`}>
             <path
-              opacity="0.7"
-              d="M55.3846 36.4286H18.4615V91.7143H55.3846V36.4286ZM73.8462 110.143H0V18H73.8462V110.143Z"
-              fill="currentColor"
+              d="M64.6154 0H83.0769V18.4286H64.6154ZM64.6154 18.4286H138.4615V36.8571H64.6154ZM64.6154 36.8571H83.0769V55.2857H64.6154ZM120 36.8571H138.4615V55.2857H120ZM64.6154 55.2857H83.0769V73.7143H64.6154ZM120 55.2857H138.4615V73.7143H120ZM64.6154 73.7143H83.0769V92.1429H64.6154ZM120 73.7143H138.4615V92.1429H120ZM64.6154 92.1429H138.4615V110.5714H64.6154Z"
             />
             <path
-              opacity="0.7"
-              d="M110.462 91.7143H147.385V36.4286H110.462V91.7143ZM165.846 110.143H110.462V128.571H92V18H165.846V110.143Z"
-              fill="currentColor"
+              d="M156.9231 0H175.3846V18.4286H156.9231ZM156.9231 36.8571H175.3846V55.2857H156.9231ZM156.9231 55.2857H175.3846V73.7143H156.9231ZM156.9231 73.7143H175.3846V92.1429H156.9231ZM156.9231 92.1429H175.3846V110.5714H156.9231Z"
             />
             <path
-              opacity="0.7"
-              d="M258.846 73.2857H203.462V91.7143H258.846V110.143H185V18H258.846V73.2857ZM203.462 54.8571H240.385V36.4286H203.462V54.8571Z"
-              fill="currentColor"
+              d="M193.8462 18.4286H267.6923V36.8571H193.8462ZM249.2308 36.8571H267.6923V55.2857H249.2308ZM193.8462 55.2857H267.6923V73.7143H193.8462ZM193.8462 73.7143H212.3077V92.1429H193.8462ZM249.2308 73.7143H267.6923V92.1429H249.2308ZM193.8462 92.1429H267.6923V110.5714H193.8462Z"
             />
             <path
-              opacity="0.7"
-              d="M332.385 36.4286H295.462V110.143H277V18H332.385V36.4286ZM350.846 110.143H332.385V36.4286H350.846V110.143Z"
-              fill="currentColor"
+              d="M323.0769 0H341.5385V18.4286H323.0769ZM304.6154 18.4286H378.4615V36.8571H304.6154ZM323.0769 36.8571H341.5385V55.2857H323.0769ZM323.0769 55.2857H341.5385V73.7143H323.0769ZM323.0769 73.7143H341.5385V92.1429H323.0769ZM323.0769 92.1429H378.4615V110.5714H323.0769Z"
             />
             <path
-              opacity="0.7"
-              d="M442.846 36.4286H387.462V91.7143H442.846V110.143H369V18H442.846V36.4286Z"
-              fill="currentColor"
+              d="M396.9231 18.4286H470.7692V36.8571H396.9231ZM396.9231 36.8571H415.3846V55.2857H396.9231ZM452.3077 36.8571H470.7692V55.2857H452.3077ZM396.9231 55.2857H470.7692V73.7143H396.9231ZM396.9231 73.7143H415.3846V92.1429H396.9231ZM396.9231 92.1429H470.7692V110.5714H396.9231Z"
             />
             <path
-              opacity="0.7"
-              d="M517.385 36.4286H480.462V91.7143H517.385V36.4286ZM535.846 110.143H462V18H535.846V110.143Z"
-              fill="currentColor"
+              d="M489.2308 18.4286H563.0769V36.8571H489.2308ZM489.2308 36.8571H507.6923V55.2857H489.2308ZM489.2308 55.2857H507.6923V73.7143H489.2308ZM489.2308 73.7143H507.6923V92.1429H489.2308ZM489.2308 92.1429H563.0769V110.5714H489.2308Z"
             />
             <path
-              opacity="0.7"
-              d="M609.385 36.8571H572.462V92.1429H609.385V36.8571ZM627.846 110.571H554V18.4286H609.385V0H627.846V110.571Z"
-              fill="currentColor"
-            />
-            <path
-              opacity="0.7"
-              d="M664.462 36.4286V54.8571H701.385V36.4286H664.462ZM719.846 73.2857H664.462V91.7143H719.846V110.143H646V18H719.846V73.2857Z"
-              fill="currentColor"
+              d="M581.5385 0H600V18.4286H581.5385ZM581.5385 18.4286H636.9231V36.8571H581.5385ZM581.5385 36.8571H600V55.2857H581.5385ZM636.9231 36.8571H655.3846V55.2857H636.9231ZM581.5385 55.2857H600V73.7143H581.5385ZM636.9231 55.2857H655.3846V73.7143H636.9231ZM581.5385 73.7143H600V92.1429H581.5385ZM636.9231 73.7143H655.3846V92.1429H636.9231ZM581.5385 92.1429H600V110.5714H581.5385ZM636.9231 92.1429H655.3846V110.5714H636.9231Z"
             />
           </g>
         </g>
@@ -61,9 +43,14 @@ export function WordmarkV2(props: Pick<ComponentProps<"svg">, "class">) {
         <mask id={mask} style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="720" height="129">
           <rect width="720" height="129" fill={`url(#${maskGradient})`} />
         </mask>
-        <linearGradient id={maskGradient} x1="360" y1="68" x2="360" y2="129" gradientUnits="userSpaceOnUse">
-          <stop stop-color="white" stop-opacity="0.7" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+        <linearGradient id={maskGradient} x1="360" y1="40" x2="360" y2="129" gradientUnits="userSpaceOnUse">
+          <stop stop-color="white" stop-opacity="1" />
+          <stop offset="1" stop-color="white" stop-opacity="0.35" />
+        </linearGradient>
+        <linearGradient id={fillGradient} x1="0" y1="0" x2="720" y2="129" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#ff2a4f" />
+          <stop offset="0.55" stop-color="#cc092f" />
+          <stop offset="1" stop-color="#8a0a20" />
         </linearGradient>
       </defs>
     </svg>
